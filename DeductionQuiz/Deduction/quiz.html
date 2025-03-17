@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deduction Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="header">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <span class="progress-text">1/25</span>
+          </div>
+          <div class="timer">
+            <div class="timer-border">
+              <span id="time-left" style="font-family: 'Orbitron', sans-serif;">20:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="question-container">
+          <p id="attachment-text" style="width: 90vw"></p>
+          <p id="question-text"></p>
+        </div>
+        <div class="options-container" id="options-container">
+          <button class="option">Option 1</button>
+          <button class="option">Option 2</button>
+          <button class="option">Option 3</button>
+          <button class="option">Option 4</button>
+          <button class="option">Option 5</button>
+          <button class="option">Option 6</button>
+      </div>
+        <div class="navigation">
+          <button id="prev-btn">← PREVIOUS</button>
+          <button id="next-btn">NEXT →</button>
+        </div>
+    </div>
+    <script type="module" src="quiz.js"></script>
+</body>
+</html>

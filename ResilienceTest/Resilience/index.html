@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resilience Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="test-container">
+        <div id="title-page" class="page">
+            <div class="firstbox">
+                <h1 class="title">RESILIENCE TEST</h1>
+                <br>
+            </div>
+            <button id="start-btn" onclick="goToInstructions()">START</button>
+            <div class="secondbox" style="margin-bottom: -15px"></div> 
+        </div> 
+    
+        <!-- Instruction Page -->
+        <div id="instruc-page" class="page">
+            <div class="secbox">
+                <h1 style="margin-top: 70px; margin-left: 70px">INSTRUCTIONS</h1>
+                <ul>
+                    <li>Please answer each question honestly and to the best of your ability.</li>
+                    <li>Read each question carefully.</li>
+                    <li>Click on the "Next" button to move to the next question.</li>
+                </ul>
+                <button id="cont-btn" onclick="startTest()">
+                    Continue
+                </button>
+            </div>
+        </div> 
+
+        <div id="question-pages" class="page ques">
+            <div class="tab-container">
+                <h2 id="section-title"></h2>
+                <div id="questions" class="scrollable-questions"></div>
+                <div class="nav-buttons">
+                    <button id="prevButton" onclick="previousPage()">← PREVIOUS</button>
+                    <button id="nextButton" onclick="nextPage()">NEXT →</button>
+                </div>
+            </div>
+        </div>
+        
+      
+        <div id="results-page" class="page res">
+            <div class="tab-container">
+                <!-- Results content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="scriptde.js"></script>
+</body>
+</html>

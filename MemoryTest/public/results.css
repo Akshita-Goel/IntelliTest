@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(196, 225, 197);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+   
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.dashboard-btn{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #424141;
+    background-color: white;
+    border: 2px solid #e3dede;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+.download-btn {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #424141;
+    background-color: white;
+    border: 2px solid #e3dede;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dashboard-btn:hover, .download-btn:hover {
+    color: #3b3b3b;
+    transform: translateY(-2px);
+}
+
+.dashboard-btn:active, .download-btn:active {
+    color: #3b3b3b;
+    transform: translateY(0);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #423f3f;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #6481A8;
+    color: #fff;
+    font-weight: 600;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}

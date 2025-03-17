@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attention Results</title>
+    <link rel="stylesheet" href="/results.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="/dashboard?username={{username}}" class="dashboard-btn">Back to Dashboard</a>
+            <button id="downloadBtn" class="download-btn">Download Results as PDF</button>
+        </div>
+        <h1 style="margin-top: -30px;">Attention Test Results</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each results}}
+                <tr>
+                    <td>{{formatDate this.date}}</td>
+                    <td>{{this.scoreattention}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            const username = '{{username}}';
+            window.location.href = `/download-results-pdf?username=${username}`;
+        });
+    </script>
+</body>
+</html>

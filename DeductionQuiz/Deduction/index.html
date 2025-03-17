@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem-Solving and Deduction Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="start-screen">
+        <div class="firstbox">
+            <h1 style="color: #FFFFFF; margin-top: 200px; font-weight: 600;">PROBLEM-SOLVING AND 
+                <br>
+                DEDUCTION TEST</h1>
+            <br>
+            <button id="start-btn" style="margin-top: 280px">Start</button>
+            
+        </div>
+        <div class="secondbox1" style="margin-bottom: -120px;">
+        </div>
+        
+        <div class="secondbox" style="display: none;">
+            <div class="secbox">
+                <h1 style="margin-top: 100px; margin-left: 100px">INSTRUCTIONS</h1>
+                <ul style="margin-left: 120px; margin-top: 50px; font-size: 25px;">
+                    <li>Answer the questions based on the data provided.</li>
+                    <li>Read each question carefully.</li>
+                    <li>Select the best answer from the given options.</li>
+                    <li>Click on the "Next" button to move to the next question.</li>
+                    <li>Total Time : 20 minutes</li>
+                </ul>
+                <button id="cont-btn">Continue</button>
+            </div>
+        </div>
+    </div> 
+
+<script>
+    const startBtn = document.getElementById('start-btn');
+    const continueBtn = document.getElementById('cont-btn');
+    const firstbox = document.querySelector('.firstbox');
+    const secondbox = document.querySelector('.secondbox');
+
+    startBtn.onclick = () => {
+        firstbox.style.display = 'none';
+        secondbox.style.display = 'block';
+    }
+
+    continueBtn.onclick = () => {
+        window.location.href = 'quiz.html';
+    }
+</script>
+</body>
+</html>

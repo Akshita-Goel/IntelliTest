@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attention Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-screen">
+        <div class="firstbox">
+            <h2 id="test">ATTENTION TEST</h2>
+            <br>
+        </div>
+        <button id="start-btn">Start</button>
+        <div class="secondbox">
+        </div> 
+    </div> 
+
+    <div id="instr-screen" style="display: none;">
+        <div class="secbox">
+            <h1 id="instruc">INSTRUCTIONS</h1>
+            <ul>
+                <li>It is a processing speed test based on the well-established digit symbol coding paradigm.</li>
+                <li>In this test, subjects are presented with a legend that defines <strong>nine symbols</strong>, with each symbol <strong>corresponding to a digit from 1 to 9</strong>.</li>
+                <li>The subject is then presented with a conveyer belt in the middle that displays a series of <strong>empty boxes labelled with a number</strong>.</li>
+                <li>The subject must select the <strong>symbol that corresponds</strong> to the number of a given highlighted box from <strong>symbol options presented</strong> at the bottom of the screen.</li>
+                <li>The subject must try to place as many correct symbols in the boxes as possible within <strong>30 seconds</strong>.</li>
+                <li>Click on Continue button to proceed to the Practice Test.</li>
+            </ul>
+            <button id="cont-btn">Continue</button>
+        </div>
+    </div>
+
+    <div id="start-practice-ask" style="display:none; background-image: url('score-blue.png'); background-size: cover; background-repeat: no-repeat; background-position: center; width:1000vw; height:320px;">
+        <h2 id="ready">Ready for Practice?</h2>
+        <div id="practice-button">
+            <button id="start-practice-game">Start Practice</button>
+        </div>
+    </div>
+
+    <div id="game-screen" style="display: none; width: 60vw; height: 80vh; margin-top: -5.2px">
+        <div id="game-info">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+                <span class="progress-text">1/10</span>
+            </div>
+            <h2 id="game-title" style="height:20px; margin-top: -1px;"></h2>
+            <div class="timer">
+                <div class="timer-background"></div>
+                <div class="timer-border">
+                    <span id="time-left" style="font-family: 'Orbitron', sans-serif;">00:30</span>
+                </div>
+            </div>
+        </div>
+        <div id="symbol-key"></div>
+        <div id="conveyor-belt"></div>
+        <div id="options"></div>
+    </div>
+
+    <div id="score-screen" style="display: none; ">
+        <h2 id="res">Results</h2>
+        <div id="score-mode"></div>   
+        <div id="score-info" style="margin-top: 10px">
+            <div id="score-details"></div>
+            <div id="interpretation"></div>
+        </div>
+
+        <div id="info">
+            <button id="play-test">Start Test Game</button>
+            <button id="play-again">Play Practice Again</button>
+            <button id="backtodash-btn">Back to Dashboard</button>
+        </div>
+    </div>
+
+    <div id="start-test-ask" style="display:none; background-image: url('score-blue.png'); background-size: cover; background-repeat: no-repeat; background-position: center; width:1000vw; height:320px;">
+        <h2 id="ready">Ready for Test?</h2>
+        <div id="practice-button">
+            <button id="start-test-game">Start Test</button>
+        </div>
+    </div>
+
+    <script src="scriptde.js"></script>
+</body>
+</html>

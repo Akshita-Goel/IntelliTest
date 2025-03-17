@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Task</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>     
+    <div id="game-container">
+        <div id="start-screen">
+            <div class="firstbox">
+                <h2 style="color: #FFFFFF; margin-top: 30px; font-weight: 600; ">RECOGNITION MEMORY TASK</h2>
+            </div>
+            <button id="start-btn">Start</button>
+            <div class="secondbox">
+            </div> 
+        </div> 
+    
+        <div id="instr-screen" class="hidden">
+            <div class="secbox">
+                <h1 style="margin-top: 70px; margin-left: -1060px">INSTRUCTIONS</h1>
+                <ul>
+                    <li>Makes pairs <strong>of similar blocks</strong> by flipping them.</li>
+                    <li>Click on a block to flip it.</li>
+                    <li>If the <strong>2 blocks</strong> that you clicked <strong>don't match</strong>, the blocks will be flipped back.</li>
+                </ul>
+                <button id="cont-btn">Continue</button>
+            </div>
+        </div>
+
+        <div id="practice-screen" class="hidden" style="background-image: url('score-blue.png'); background-size: cover; background-repeat: no-repeat; background-position: center; width:1000vw; height:320px;">
+            <h2 id="prac">PRACTICE</h2>
+            <h3 id="cont">Click to Continue</h3>
+            <div id="practice-button">
+                <button id="practice-start-btn" data-size="4x5">4 X 5</button>
+            </div>
+        </div>
+
+        <div id="game-screen" class="hidden">            
+            <div id="game-info">
+                <div id="moves-container"><span id="moves">Moves: 0</span></div>
+                <div id="timer-container"><span id="timer">00:00</span></div>
+            </div>
+            <button id="quit-btn">Quit</button>  
+            <div id="game-board"></div>
+        </div>
+
+        <div id="practice-score-screen" class="hidden">
+            <h2 style="font-size: 45px; font-weight:bold; text-align:center; margin-top:20px;">Practice Results</h2>
+            <div id="score-info">
+                <div id="score-mode"></div>
+                <div id="score-moves-container">
+                    <span class="label"></span>
+                    <span id="score-moves"></span>
+                </div>
+                <div id="score-time-container">
+                    <span class="label">Time</span>
+                    <span id="score-time"></span>
+                </div>
+            </div>
+            <button id="start-test-btn" style="margin-top: 140px; margin-left:420px; font-size: 25px;padding: 15px 25px;">START TEST</button>
+        </div>
+
+        <div id="test-screen" class="hidden" style="background-image: url('score-blue.png'); background-size: cover; background-repeat: no-repeat; background-position: center; width:1000vw; height:320px;">
+            <h2 id="test">TEST</h2>
+            <h3 id="choose">Choose one to Continue</h3>
+            <div id="test-buttons" style="margin-left: 470px;">
+                <button class="test-btn" data-size="3x4">3 X 4</button>
+                <button class="test-btn" data-size="4x4">4 X 4</button>
+                <button class="test-btn" data-size="4x5">4 X 5</button>
+                <button class="test-btn" data-size="5x6">5 X 6</button>
+                <button class="test-btn" data-size="6x6">6 X 6</button>
+            </div>
+        </div>
+
+        <div id="test-score-screen" class="hidden">
+            <h2 style="font-size: 45px; font-weight:bold; text-align:center; margin-top:20px;">Test Results</h2>
+            <div id="test-score-info">
+                <div id="test-score-mode"></div>
+                <div id="test-score-moves-container">
+                    <span class="label"></span>
+                    <span id="test-score-moves"></span>
+                </div>
+                <div id="test-score-time-container">
+                    <span class="label">Time</span>
+                    <span id="test-score-time"></span>
+                </div>
+            </div>
+            <div id="cont-play">
+                <h3 id="play-again">Play Again</h3>
+                <div id="play-again-buttons">
+                    <button class="test-btn" data-size="3x4">3 X 4</button>
+                    <button class="test-btn" data-size="4x4">4 X 4</button>
+                    <button class="test-btn" data-size="4x5">4 X 5</button>
+                    <button class="test-btn" data-size="5x6">5 X 6</button>
+                    <button class="test-btn" data-size="6x6">6 X 6</button>
+                </div>
+            </div>
+            <br> <br> <br>
+            <button id="backtodash-btn" style="margin-left: 420px;">Back to Dashboard</button>
+        </div>
+    </div>
+    <script src="scriptde.js"></script>
+</body>
+</html>
